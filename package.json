@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "seed:dev": "nodemon ./db/seed.js"
+    "seed:dev": "nodemon ./db/seed.js",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,10 @@
   },
   "homepage": "https://github.com/Pharoh-Ramses/Juicebox#readme",
   "dependencies": {
-    "pg": "^8.7.3"
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "volleyball": "^1.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
